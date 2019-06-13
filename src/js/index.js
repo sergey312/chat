@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import _ from 'lodash';
 
-import './../sass/styles.scss';
+
 
 const getHeader = () => {
   const helloWebpack = _.join(['Hello', 'webpack!'], ' ');
