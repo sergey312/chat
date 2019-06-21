@@ -1,13 +1,273 @@
-//сolor: #505d70;
-
-wallpaper {
- background-image: url("../image/fone.jpg");
- height: 300px;
+div:not(.wallpaper) {
+  border-radius: 10px;
 }
 
-div {
- min-height: 20px;
+div:not(.photoQuantity){
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.OneMessage span{
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.padingA {
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+.wallpaper {
+  background-image: url("../images/fone.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 70px 1fr;
+}
+
+.header {
+  justify-self: center;
+  display: inherit;
+  width: 1000px;
+  height: 70px;
+  background-color:rgba(40,150,200,1);
+  grid-template-columns: 2fr 70px 2fr 2fr;
+}
+
+.logo {
+  background-image: url("../images/stackpath.svg");
+  background-size: cover;
+  width: 75%;
+  height: 75%;
+  margin: 5px;
+}
+
+.time {
+  display: inherit;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+}
+
+.unreadMessage {
+  display: inherit;
+}
+
+.photoMessage {
+  display: inherit;
+  background-image: url("../images/message.svg");
+  background-repeat: no-repeat;
+  width: 75%;
+  height: 75%;
+  margin: 5px;
+}
+
+.photoQuantity {
+  width: 15px;
+  height: 15px;
+  background-color: greenyellow;
+  color: black;
+  font-size: 12px;
+  justify-self: end;
+  align-self: end;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid white;
+
+}
+
+.profile {
+  display: inherit;
+  grid-template-columns: 1fr 3fr;
+
+}
+
+.avatar {
+  display: inherit;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-radius: 50%;
+  background-image: url("../images/face.jpg");
+  background-size: cover;
+  width: 75%;
+  height: 75%;
+  margin: 5px;
+}
+
+.status {
+  justify-self: end;
+  align-self: end;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: greenyellow;
+  border: 1px solid white;
+}
+
+.name {
+  text-align: center;
+  margin: 5px;
+}
+
+.edit{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 5px;
+}
+
+.header img {
+  width: 23px;
+  height: 23px;
 }
 
 
+.content {
+  justify-self: center;
+  width: 960px;
+  display: inherit;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 10fr 1fr 2fr;
+}
+
+.quantityUsersOnline {
+
+}
+
+.displayForInfMessage {
+
+}
+
+.usersChat {
+  display: inherit;
+  background-color:rgba(200,200,255,0.6);
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mychoise {
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.quantityUsersOnline {
+
+}
+.oneUsers{
+  display: inherit;
+  grid-template-columns: 4fr 1fr;
+}
+
+.statusForUsers{
+  align-self: center ;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black ;
+}
+
+.onlineUser {
+ background-color: greenyellow;
+}
+
+.LastSeen15ago {
+  background-color: orange;
+}
+
+.lastSeenLongTime {
+  background-color: #ff2400;
+}
+
+
+.chat {
+  background-color: rgba(0,192,255,0.3);
+  display: inherit;
+  grid-template-rows: 1fr 10fr;
+}
+
+.TabButtons {
+ display: inherit;
+  grid-template-columns: 1fr 1fr 10fr 1fr;
+  background-color:rgba(200,200,255,0.6);
+}
+
+.buttons {
+display: inherit;
+  justify-self: center;
+  align-self: center;
+
+}
+
+.Messages {
+  margin: 3px;
+  display: inherit;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.OneMessage{
+  margin: 5px;
+  width: 98%;
+  height: 89%;
+}
+
+.MyMessage {
+
+}
+.otherMessage{
+
+}
+
+.nameM {
+  background-color: rgba(255,255,255,0.5);
+  padding: 5px;
+}
+.text {
+  background-color: rgba(255,255,255,0.5);
+  margin: 5px;
+  padding: 5px;
+
+}
+
+
+.windowInputMessage {
+  background-color:rgba(40,93,150,0.8);
+  display: inherit;
+
+}
+.displayForInfMessage {
+  background-color:rgba(0,150,150,0.8);
+  display: inherit;
+  grid-template-columns: 1.5fr 1fr 2fr 2fr;
+}
+
+.input {
+
+}
+
+.marg {
+  display: inherit;
+  justify-self: center;
+  align-self: center;
+}
+
+.mess {
+  width: 70%;
+  height: 50%;
+}
+
+.characters{
+  display: inherit;
+  grid-template-columns: auto auto;
+  justify-self: start;
+  margin: auto;
+}
 
