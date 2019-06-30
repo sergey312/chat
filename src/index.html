@@ -11,7 +11,7 @@
 <body>
     <div class="wallpaper">
         <div class="header">
-            <div class="logo"></div>
+
             <div class="unreadMessage">
                 <a href="#">
                 <div class="photoMessage">
@@ -20,8 +20,11 @@
                 </a>
             </div>
             <div class="time">
-                <div class="hoursMinutes">18:43</div>
+                <div id="timedisplay">18:43</div>
                 <div class="date">20.06.2019</div>
+            </div>
+            <div class="logo">
+                <span>BetChat</span>
             </div>
             <div class="profile">
                 <div class="avatar">
@@ -34,50 +37,52 @@
         <div class="content">
             <div class="usersChat">
                 <div class="quantityUsersOnline">Online: <span>4</span></div>
-                <div class="oneUsers mychoise">
-                    <img src="images/Layer_5.png" alt="">
-                    <span class="name">John</span>
-                    <div title="В сети" class="statusForUsers onlineUser "></div>
-                </div>
-                <div class="oneUsers ">
-                    <img src="images/Layer_2.png" alt="">
-                    <span class="name">George</span>
-                    <div  title="В сети" class="statusForUsers onlineUser"></div>
-                </div>
-                <div class="oneUsers">
-                    <img src="images/Layer_7.png" alt="">
-                    <span class="name">Oliver</span>
-                    <div title="Заходил меньше 15 минут назад" class="statusForUsers LastSeen15ago"></div>
-                </div>
-                <div class="oneUsers">
-                    <img src="images/Layer_8.png" alt="">
-                    <span class="name">Harry</span>
-                    <div title="В сети" class="statusForUsers onlineUser"></div>
-                </div>
-                <div class="oneUsers">
-                    <img src="images/Layer_6.png" alt="">
-                    <span class="name">Jacob</span>
-                    <div title="Заходил меньше 15 минут назад" class="statusForUsers LastSeen15ago"></div>
-                </div>
-                <div class="oneUsers">
-                    <img src="images/Layer_10.png" alt="">
-                    <span class="name">Daniel</span>
-                    <div  title="В сети" class="statusForUsers onlineUser"></div>
-                </div>
-                <div class="oneUsers">
-                    <img src="images/Layer_4.png" alt="">
-                    <span class="name">Charlie</span>
-                    <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
-                </div>
-                <div class="oneUsers">
-                    <img src="images/Layer_1.png" alt="">
-                    <span class="name">William</span>
-                    <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
-                </div>
-                <div class="oneUsers">
-                    <img src="" alt="">
-                    <span class="name">Mason</span>
-                    <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
+                <div class="Users">
+                    <div class="oneUsers mychoise">
+                        <img src="images/Layer_5.png" alt="">
+                        <span class="name">John</span>
+                        <div title="В сети" class="statusForUsers onlineUser "></div>
+                    </div>
+                    <div class="oneUsers ">
+                        <img src="images/Layer_2.png" alt="">
+                        <span class="name">George</span>
+                        <div  title="В сети" class="statusForUsers onlineUser"></div>
+                    </div>
+                    <div class="oneUsers">
+                        <img src="images/Layer_7.png" alt="">
+                        <span class="name">Oliver</span>
+                        <div title="Заходил меньше 15 минут назад" class="statusForUsers LastSeen15ago"></div>
+                    </div>
+                    <div class="oneUsers">
+                        <img src="images/Layer_8.png" alt="">
+                        <span class="name">Harry</span>
+                        <div title="В сети" class="statusForUsers onlineUser"></div>
+                    </div>
+                    <div class="oneUsers">
+                        <img src="images/Layer_6.png" alt="">
+                        <span class="name">Jacob</span>
+                        <div title="Заходил меньше 15 минут назад" class="statusForUsers LastSeen15ago"></div>
+                    </div>
+                    <div class="oneUsers">
+                        <img src="images/Layer_10.png" alt="">
+                        <span class="name">Daniel</span>
+                        <div  title="В сети" class="statusForUsers onlineUser"></div>
+                    </div>
+                    <div class="oneUsers">
+                        <img src="images/Layer_4.png" alt="">
+                        <span class="name">Charlie</span>
+                        <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
+                    </div>
+                    <div class="oneUsers">
+                        <img src="images/Layer_1.png" alt="">
+                        <span class="name">William</span>
+                        <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
+                    </div>
+                    <div class="oneUsers">
+                        <img src="images/anonim.png" alt="">
+                        <span class="name">Mason</span>
+                        <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
+                    </div>
                 </div>
             </div>
             <div class="chat">
@@ -104,10 +109,24 @@
                     </div>
                     <div class="OneMessage otherMessage">
                         <img src="images/Layer_5.png" alt="">
-                        <span class="text Dif">Some text</span>
+                        <span class="text Dif">in voluptate velit esse cillum dolore
+                                                eu fugiat nulla pariatur. Excepteur sint</span>
                     </div>
                     <div class="OneMessage MyMessage">
-                        <span class="text Main">Some text</span>
+                        <span class="text Main">in voluptate velit esse cillum dolore
+                                                eu fugiat nulla pariatur. Excepteur sint</span>
+                        <img src="images/face.jpg" alt="">
+                    </div>
+                    <div class="OneMessage otherMessage">
+                        <img src="images/Layer_5.png" alt="">
+                        <span class="text Dif">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt</span>
+                    </div>
+                    <div class="OneMessage MyMessage">
+                        <span class="text Main">ut labore et dolore magna aliqua. Ut enim
+                                                ad minim veniam, quis nostrud exercitation ullamco laboris ni
+                                                si ut aliquip ex ea commodo consequat.
+                                                Duis aute irure dolor in reprehenderit </span>
                         <img src="images/face.jpg" alt="">
                     </div>
                 </div>

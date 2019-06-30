@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
 *{
   font-family: 'Roboto', sans-serif;
   color: #34495e;
@@ -36,10 +49,10 @@ body {
   background-color:#3598db;
   border-radius: 5px;
   box-shadow: 0 0 25px rgba(53, 152, 219, 0.1);
-  grid-template-columns: 2fr 50px 2fr 2fr;
+  grid-template-columns: 90px 15fr 20fr 20fr;
   &>.logo {
-    //background-image: url("../images/stackpath.svg");
-    background-repeat: no-repeat;
+   font-size: 45px;
+    margin: auto;
   }
   &>.time {
     display: inherit;
@@ -77,8 +90,8 @@ body {
     grid-template-columns: auto auto auto;
     &>.avatar {
       display: inherit;
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background-image: url("../images/face.jpg");
       background-size: cover;
@@ -120,8 +133,7 @@ body {
     background-color:#ffffff;
     grid-row-start: 1;
     grid-row-end: 3;
-    overflow: scroll;
-    overflow-x:hidden;
+    grid-template-rows: 30px 1fr ;
     height: 85vh;
     &>.quantityUsersOnline {
       font-size: 22px;
@@ -129,43 +141,50 @@ body {
       justify-self: center;
       align-self: center;
       color: #51dacf;
+      height: 30px;
     }
-    &>.mychoise {
-      background-color: #f5f6f8;
-    }
-    &>.oneUsers{
+    &>.Users {
+      overflow: scroll;
+      overflow-x:hidden;
       display: inherit;
-      grid-template-columns: 2fr 4fr 1fr;
-      font-weight: 700;
-      font-size: 16px;
-      &>img {
-        border-radius: 50%;
-        background-color: #3498db;
-        width: 40px;
-        height: 40px;
-        justify-self: center;
-        align-self: center;
+      &>.mychoise {
+        background-color: #f5f6f8;
       }
-      &>.name {
-        align-self: center;
+      &>.oneUsers{
+        display: inherit;
+        grid-template-columns: 2fr 4fr 1fr;
+        font-weight: 700;
+        font-size: 16px;
+        height: 60px;
+        &>img {
+          border-radius: 50%;
+          background-color: #3498db;
+          width: 40px;
+          height: 40px;
+          justify-self: center;
+          align-self: center;
+        }
+        &>.name {
+          align-self: center;
 
-      }
-      &>.statusForUsers{
-        justify-self: center;
-        align-self: center;
-        width: 8px;
-        height: 8px;
-        box-shadow: 0 2px 4px #51dacf;
-        border-radius: 50%;
-      }
-      &>.onlineUser {
-        background-color: #51dacf;
-      }
-      &>.LastSeen15ago {
-        background-color: #d4e1ea;
-      }
-      &>.lastSeenLongTime {
-        background-color: #d4e1ea;
+        }
+        &>.statusForUsers{
+          justify-self: center;
+          align-self: center;
+          width: 8px;
+          height: 8px;
+          box-shadow: 0 2px 4px #51dacf;
+          border-radius: 50%;
+        }
+        &>.onlineUser {
+          background-color: #51dacf;
+        }
+        &>.LastSeen15ago {
+          background-color: #d4e1ea;
+        }
+        &>.lastSeenLongTime {
+          background-color: #d4e1ea;
+        }
       }
     }
   }
@@ -175,12 +194,12 @@ body {
     overflow: scroll;
     overflow-x:hidden;
     &>.Messages {
+      align-content: end;
       margin: 3px;
       display: inherit;
-      overflow: auto;
       &>.OneMessage{
         display: inherit;
-        height: 37px;
+        margin: 5px;
         &>img {
           border-radius: 50%;
           background-color: #3498db;
@@ -190,6 +209,8 @@ body {
         &>.text {
           padding: 5px;
           text-align: center;
+          font-size: 15px;
+          max-width: 360px;
         }
         &>.Main {
           background-color: #3598db;
@@ -234,16 +255,17 @@ body {
     }
   }
   &>.displayForInfMessage {
+    align-content: end;
     grid-row-start: 1;
     grid-row-end: 3;
     background-color:#ffffff;
     display: inherit;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto  auto;
     &>.characters{
       display: inherit;
       grid-template-columns: auto auto;
       justify-self: start;
-      margin: auto;
+      padding: 10px;
     }
   }
 }
