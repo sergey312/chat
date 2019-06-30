@@ -6,16 +6,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Webpack starter</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wallpaper">
         <div class="header">
             <div class="logo"></div>
             <div class="unreadMessage">
+                <a href="#">
                 <div class="photoMessage">
                     <div class="photoQuantity">2</div>
                 </div>
-
+                </a>
             </div>
             <div class="time">
                 <div class="hoursMinutes">18:43</div>
@@ -26,82 +28,110 @@
                     <div class="status"></div>
                 </div>
                 <div class="name">Коноваленко Сергей</div>
-                <div class="edit"><a href="#">Редактировать <img src="images/settings32.svg" alt=""></a></div>
+                <div class="edit"><a href="#"><img src="images/settings32.png" alt=""></a></div>
             </div>
         </div>
         <div class="content">
             <div class="usersChat">
-                <div class="quantityUsersOnline padingA">Пользователей онлайн: <span>4</span></div>
-                <div class="oneUsers padingA mychoise">John
-                    <div class="statusForUsers onlineUser "></div>
+                <div class="quantityUsersOnline">Online: <span>4</span></div>
+                <div class="oneUsers mychoise">
+                    <img src="images/Layer_5.png" alt="">
+                    <span class="name">John</span>
+                    <div title="В сети" class="statusForUsers onlineUser "></div>
                 </div>
-                <div class="oneUsers padingA">Adru
-                    <div class="statusForUsers onlineUser"></div>
+                <div class="oneUsers ">
+                    <img src="images/Layer_2.png" alt="">
+                    <span class="name">George</span>
+                    <div  title="В сети" class="statusForUsers onlineUser"></div>
                 </div>
-                <div class="oneUsers padingA">Ichigo
-                    <div class="statusForUsers LastSeen15ago"></div>
+                <div class="oneUsers">
+                    <img src="images/Layer_7.png" alt="">
+                    <span class="name">Oliver</span>
+                    <div title="Заходил меньше 15 минут назад" class="statusForUsers LastSeen15ago"></div>
                 </div>
-                <div class="oneUsers padingA">Drake
-                    <div class="statusForUsers onlineUser"></div>
+                <div class="oneUsers">
+                    <img src="images/Layer_8.png" alt="">
+                    <span class="name">Harry</span>
+                    <div title="В сети" class="statusForUsers onlineUser"></div>
                 </div>
-                <div class="oneUsers padingA">Fyri
-                    <div class="statusForUsers LastSeen15ago"></div>
+                <div class="oneUsers">
+                    <img src="images/Layer_6.png" alt="">
+                    <span class="name">Jacob</span>
+                    <div title="Заходил меньше 15 минут назад" class="statusForUsers LastSeen15ago"></div>
                 </div>
-                <div class="oneUsers padingA">Daniel
-                    <div class="statusForUsers onlineUser"></div>
+                <div class="oneUsers">
+                    <img src="images/Layer_10.png" alt="">
+                    <span class="name">Daniel</span>
+                    <div  title="В сети" class="statusForUsers onlineUser"></div>
                 </div>
-                <div class="oneUsers padingA">Nick
-                    <div class="statusForUsers lastSeenLongTime"></div>
+                <div class="oneUsers">
+                    <img src="images/Layer_4.png" alt="">
+                    <span class="name">Charlie</span>
+                    <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
+                </div>
+                <div class="oneUsers">
+                    <img src="images/Layer_1.png" alt="">
+                    <span class="name">William</span>
+                    <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
+                </div>
+                <div class="oneUsers">
+                    <img src="" alt="">
+                    <span class="name">Mason</span>
+                    <div title="Заходил давно" class="statusForUsers lastSeenLongTime"></div>
                 </div>
             </div>
             <div class="chat">
-                <div class="TabButtons">
-                    <div class="buttons"><a href="#"><img src="images/up64.png" alt="" width="32" height="32"></a></div>
-                    <div class="buttons"><a href="#"><img src="images/down64.png" alt="" width="32" height="32"></a></div>
-                    <input type="text">
-                    <div class="buttons"><a href="#"><img src="images/search64.png" alt="" width="32" height="32"></a></div>
-                </div>
                 <div class="Messages">
                     <div class="OneMessage MyMessage">
-                        <span class="nameM">Сергей</span>
-                        <div class="text">Hi, I'm from Ukranian</div>
+                        <span class="text Main">Hi, I'm from Ukranian</span>
+                        <img src="images/face.jpg" alt="">
                     </div>
                     <div class="OneMessage otherMessage">
-                        <span class="nameM">John</span>
-                        <div class="text">Hi, I'm from USA</div>
+                        <img src="images/Layer_5.png" alt="">
+                        <span class="text Dif">Hi, I'm from USA</span>
                     </div>
                     <div class="OneMessage MyMessage">
-                        <span class="nameM">Сергей</span>
-                        <div class="text">Nice to meet you</div>
+                        <span class="text Main">Nice to meet you</span>
+                        <img src="images/face.jpg" alt="">
                     </div>
                     <div class="OneMessage otherMessage">
-                        <span class="nameM">John</span>
-                        <div class="text">Me too</div>
+                        <img src="images/Layer_5.png" alt="">
+                        <span class="text Dif">Me too</span>
                     </div>
                     <div class="OneMessage MyMessage">
-                        <span class="nameM">Сергей</span>
-                        <div class="text">What your favorite music?</div>
+                        <span class="text Main">What your favorite music?</span>
+                        <img src="images/face.jpg" alt="">
+                    </div>
+                    <div class="OneMessage otherMessage">
+                        <img src="images/Layer_5.png" alt="">
+                        <span class="text Dif">Some text</span>
+                    </div>
+                    <div class="OneMessage MyMessage">
+                        <span class="text Main">Some text</span>
+                        <img src="images/face.jpg" alt="">
                     </div>
                 </div>
+            </div>
+
+            <div class="windowInputMessage">
+                <div class="elementsFormat">
+                    <button><b>Ж</b></button>
+                    <button><i>К</i></button>
+                    <button><u>П</u></button>
+                </div>
+                    <form action="">
+                        <textarea placeholder="Ведите свое сообщение..." name="" id="" cols="80" rows="2"></textarea>
+                        <button>Отправить</button>
+                    </form>
+
             </div>
             <div class="displayForInfMessage">
-                <div class="characters">Символов: <span class="allcharacters">20</span></div>
-                <div class="characters">Букв: <span class="letters">8</span></div>
                 <div class="characters">Отступов и пробелов: <span class="spacesAndTabs">6</span></div>
                 <div class="characters">Знаков препинания: <span class="punctuationMarks">3</span></div>
-            </div>
-            <div class="windowInputMessage">
-                <div class="marg">
-                    <div class="input">
-                        <input type="text" class="mess" size="80">
-                        <button>Отправить</button>
-                    </div>
-                    <div class="elementsFormat">
-                        <button><b>Ж</b></button>
-                        <button><i>К</i></button>
-                        <button><u>П</u></button>
-                    </div>
-                </div>
+                <div class="characters">Символов: <span class="allcharacters">20</span></div>
+                <div class="characters">Букв: <span class="letters">8</span></div>
+
+
             </div>
         </div>
     </div>
